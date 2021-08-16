@@ -1,0 +1,34 @@
+Script started on 2021-08-16 13:45:11-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="172" LINES="74"]
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker run -d --rm devopsdockeruh/simple-web-service:ubuntu
+e7ac61e15160c9f122df3aa7d36d84715b1edb16975b70cdb6370ba1102675d9
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker ps
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS         PORTS     NAMES
+e7ac61e15160   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   3 seconds ago   Up 2 seconds             elated_black
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker exec -it e7ac61e15160 bash
+]0;root@e7ac61e15160: /usr/src/approot@e7ac61e15160:/usr/src/app# ls
+[0m[01;32mserver[0m  text.log
+]0;root@e7ac61e15160: /usr/src/approot@e7ac61e15160:/usr/src/app# tail -f text.log 
+2021-08-16 18:45:29 +0000 UTC
+2021-08-16 18:45:31 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-08-16 18:45:33 +0000 UTC
+2021-08-16 18:45:35 +0000 UTC
+2021-08-16 18:45:37 +0000 UTC
+2021-08-16 18:45:39 +0000 UTC
+2021-08-16 18:45:41 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-08-16 18:45:43 +0000 UTC
+2021-08-16 18:45:45 +0000 UTC
+2021-08-16 18:45:47 +0000 UTC
+2021-08-16 18:45:49 +0000 UTC
+2021-08-16 18:45:51 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-08-16 18:45:53 +0000 UTC
+2021-08-16 18:45:55 +0000 UTC
+^C
+]0;root@e7ac61e15160: /usr/src/approot@e7ac61e15160:/usr/src/app# exit
+exit
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# exit
+exit
+
+Script done on 2021-08-16 13:46:00-05:00 [COMMAND_EXIT_CODE="130"]

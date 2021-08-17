@@ -1,9 +1,10 @@
-Script started on 2021-08-12 13:58:11-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="149" LINES="74"]
-[1m[7m#[27m[1m[0m                                                                                                                                                     ]2;root@plustig-VirtualBox:/home/plustig]1;/home/plustig[0m[27m[24m[J[01;32m➜  [36mplustig[00m [K[?1h=[?2004hddocker ps -a[?1l>[?2004l
-]2;docker ps -a]1;dockerCONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
-62bbf74aaa5c   nginx     "/docker-entrypoint.…"   10 minutes ago   Up 10 minutes               80/tcp    cranky_bardeen
-081f99d32b66   nginx     "/docker-entrypoint.…"   10 minutes ago   Exited (0) 10 minutes ago             thirsty_elbakyan
-99d8db1fe1b2   nginx     "/docker-entrypoint.…"   10 minutes ago   Exited (0) 10 minutes ago             affectionate_moore
-[1m[7m#[27m[1m[0m                                                                                                                                                     ]2;root@plustig-VirtualBox:/home/plustig]1;/home/plustig[0m[27m[24m[J[01;32m➜  [36mplustig[00m [K[?1h=[?2004heexit[?1l>[?2004l
-]2;exit]1;exit
-Script done on 2021-08-12 13:58:19-05:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-08-17 13:24:44-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="177" LINES="84"]
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                          PORTS     NAMES
+3e75356cb274   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute               80/tcp    compassionate_margulis
+3dff1615873f   nginx     "/docker-entrypoint.…"   2 minutes ago        Exited (0) About a minute ago             frosty_swirles
+9c32a82c0cb7   nginx     "/docker-entrypoint.…"   2 minutes ago        Exited (0) About a minute ago             blissful_kilby
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# exit
+exit
+
+Script done on 2021-08-17 13:24:53-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,35 @@
+Script started on 2021-08-18 13:58:38-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="176" LINES="41"]
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   5 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   5 months ago   15.7MB
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker container [K[K[K[K[K[K[K[K[K[Krun -d --rm fd
+8763164ec9fc6eb8072e6939ecebbb50f0e379d43a9ad723921e48499bb2ca96
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker container ls
+CONTAINER ID   IMAGE     COMMAND                 CREATED         STATUS         PORTS     NAMES
+8763164ec9fc   fd        "/usr/src/app/server"   6 seconds ago   Up 5 seconds             fervent_hertz
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker exec -it 87 sh
+/usr/src/app # [6n/usr/src/app # [Jls
+[1;32mserver[m    [0;0mtext.log[m
+/usr/src/app # [6ntail -f te/usr/src/app # tail -f text.log [J
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-08-18 18:59:09 +0000 UTC
+2021-08-18 18:59:11 +0000 UTC
+2021-08-18 18:59:13 +0000 UTC
+2021-08-18 18:59:15 +0000 UTC
+2021-08-18 18:59:17 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-08-18 18:59:19 +0000 UTC
+2021-08-18 18:59:21 +0000 UTC
+2021-08-18 18:59:23 +0000 UTC
+2021-08-18 18:59:25 +0000 UTC
+2021-08-18 18:59:27 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-08-18 18:59:29 +0000 UTC
+2021-08-18 18:59:31 +0000 UTC
+^C
+/usr/src/app # [6nexit
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# exit
+exit
+
+Script done on 2021-08-18 13:59:38-05:00 [COMMAND_EXIT_CODE="130"]

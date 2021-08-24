@@ -1,0 +1,23 @@
+Script started on 2021-08-24 13:33:28-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="176" LINES="31"]
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1/1.7root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1/1.7# docker build . -t web-server
+Sending build context to Docker daemon   2.56kB
+Step 1/2 : FROM devopsdockeruh/simple-web-service:alpine
+ ---> fd312adc88e0
+Step 2/2 : CMD server
+ ---> Using cache
+ ---> 02e73a05ab01
+Successfully built 02e73a05ab01
+Successfully tagged web-server:latest
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1/1.7root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1/1.7# docker run web-server
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^C]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1/1.7root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1/1.7# exit
+exit
+
+Script done on 2021-08-24 13:33:52-05:00 [COMMAND_EXIT_CODE="2"]

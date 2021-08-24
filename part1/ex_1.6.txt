@@ -1,5 +1,5 @@
-Script started on 2021-08-24 12:45:44-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="176" LINES="41"]
-]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# exitcho "Password was found on github, inside index.js"[9Pdocker run -it devopsdockeruh/pull_exerciseexit[Kdocker run -it devopsdockeruh/pull_exercise
+Script started on 2021-08-24 13:37:03-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="176" LINES="31"]
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker run -it devopsdockeruh/pull_exercise
 [1G[0JGive me the password: [23Gbasics
 You found the correct password. Secret message is:
 "This is the secret message"
@@ -7,4 +7,4 @@ You found the correct password. Secret message is:
 ]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# exit
 exit
 
-Script done on 2021-08-24 12:45:53-05:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2021-08-24 13:37:14-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,16 @@
+Script started on 2021-08-25 13:27:36-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="202" LINES="42"]
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1/1.8root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1/1.8# docke [Kr run -it curler
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1/1.8root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1/1.8# exit
+exit
+
+Script done on 2021-08-25 13:27:56-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,14 @@
+Script started on 2021-08-31 13:19:24-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="170" LINES="84"]
+]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# docker run -p 8080:8080 web-server server
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^C]0;root@plustig-VirtualBox: /home/plustig/devops_with_docker/part1root@plustig-VirtualBox:/home/plustig/devops_with_docker/part1# exit
+exit
+
+Script done on 2021-08-31 13:19:35-05:00 [COMMAND_EXIT_CODE="2"]

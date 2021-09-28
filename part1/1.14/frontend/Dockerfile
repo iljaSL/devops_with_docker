@@ -7,7 +7,7 @@ COPY /example-frontend /app
 WORKDIR /app
 
 ENV REACT_APP_BACKEND_URL=http://localhost:8080
-RUN ls -la
+
 RUN npm install
 
 RUN npm run build

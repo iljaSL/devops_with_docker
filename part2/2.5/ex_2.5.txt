@@ -1,22 +1,17 @@
-Script started on 2021-12-04 17:35:46+02:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="203" LINES="27"]
-[1m[7m#[27m[1m[0m                                                                                                                                                                                                           ]2;root@plustig-VirtualBox:~/devops_with_docker/part2/2.5/scaling-exercise]1;..ling-exercise[0m[27m[24m[J[01;32m➜  [36mscaling-exercise[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker
-[J[0mdocker          [Jdocker-compose  [Jdockerd         [Jdocker-init     [Jdocker-proxy  [J[A[0m[27m[24m[33Cdocker[K
-[J[7mdocker        [0m  [Jdocker-compose  [Jdockerd         [Jdocker-init     [Jdocker-proxy  [J[A[0m[27m[24m[33Cdocker[K
-[7mdocker        [0m  [7mdocker        [0m  [A[0m[27m[24m[33Cdocker[K-compose
-[16C[7mdocker-compose[0m  docker          [A[0m[27m[24m[33Cdocker-compose[K
-[J[A[47C[1m [0m[0m up -d --scape   le compute=3[?1l>[?2004l
-[J]2;docker-compose up -d --scale compute=3]1;docker-composeStarting scaling-exercise_compute_1 ... 
-Starting scaling-exercise_compute_2 ... 
-Starting scaling-exercise_compute_3 ... 
-Starting load-balancer              ... 
-Starting calculator                 ... 
-[4A[2KStarting scaling-exercise_compute_2 ... [32mdone[0m[4B[5A[2KStarting scaling-exercise_compute_1 ... [32mdone[0m[5B[1A[2KStarting calculator                 ... [32mdone[0m[1B[3A[2KStarting scaling-exercise_compute_3 ... [32mdone[0m[3B[2A[2KStarting load-balancer              ... [32mdone[0m[2B[1m[7m#[27m[1m[0m                                                                                                                                                                                                           ]2;root@plustig-VirtualBox:~/devops_with_docker/part2/2.5/scaling-exercise]1;..ling-exercise[0m[27m[24m[J[01;32m➜  [36mscaling-exercise[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker ps[?1l>[?2004l
+Script started on 2021-12-04 17:38:35+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="203" LINES="54"]
+[1m[7m#[27m[1m[0m                                                                                                                                                                                                           ]2;root@plustig-VirtualBox:~/devops_with_docker/part2/2.5/scaling-exercise]1;..ling-exercise[0m[27m[24m[J[01;32m➜  [36mscaling-exercise[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hscript ex_2.5.txt[17Dcd scaling-exercise[19Drm ex_2.5.txt      [13Dgit push     commit -m "add ex 2.5"[22Dstatus                [16Dadd 2.5/ex_2.5.txt[18Dstatus            [12D[10Dls        [8Dcd ..cat ex_2.5.txt[14Dls            [12Dcd ..mv ex_2.5.txt ~/devops_with_docker/part2/2.5/[45Dexit                                         [41Ddocker ps-compose up -d --scale compute=3[38Dscript ex_2.5.txt                     [21D[17Ddocker-compose up -d --scale compute=3[?1l>[?2004l
+]2;docker-compose up -d --scale compute=3]1;docker-composeload-balancer is up-to-date
+scaling-exercise_compute_1 is up-to-date
+scaling-exercise_compute_2 is up-to-date
+scaling-exercise_compute_3 is up-to-date
+calculator is up-to-date
+[1m[7m#[27m[1m[0m                                                                                                                                                                                                           ]2;root@plustig-VirtualBox:~/devops_with_docker/part2/2.5/scaling-exercise]1;..ling-exercise[0m[27m[24m[J[01;32m➜  [36mscaling-exercise[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker ps[?1l>[?2004l
 ]2;docker ps]1;dockerCONTAINER ID   IMAGE                                        COMMAND                  CREATED          STATUS         PORTS                                       NAMES
-0ddbe44239a7   devopsdockeruh/scaling-exercise-compute      "docker-entrypoint.s…"   9 minutes ago    Up 2 seconds   3000/tcp                                    scaling-exercise_compute_3
-e2f616484d35   devopsdockeruh/scaling-exercise-compute      "docker-entrypoint.s…"   9 minutes ago    Up 3 seconds   3000/tcp                                    scaling-exercise_compute_2
-bd9584cd4708   devopsdockeruh/scaling-exercise-calculator   "docker-entrypoint.s…"   12 minutes ago   Up 2 seconds   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   calculator
-90dcd5130d74   devopsdockeruh/scaling-exercise-compute      "docker-entrypoint.s…"   12 minutes ago   Up 2 seconds   3000/tcp                                    scaling-exercise_compute_1
-0417c84e944d   load-balancer                                "/app/docker-entrypo…"   12 minutes ago   Up 2 seconds   0.0.0.0:80->80/tcp, :::80->80/tcp           load-balancer
+0ddbe44239a7   devopsdockeruh/scaling-exercise-compute      "docker-entrypoint.s…"   12 minutes ago   Up 2 minutes   3000/tcp                                    scaling-exercise_compute_3
+e2f616484d35   devopsdockeruh/scaling-exercise-compute      "docker-entrypoint.s…"   12 minutes ago   Up 2 minutes   3000/tcp                                    scaling-exercise_compute_2
+bd9584cd4708   devopsdockeruh/scaling-exercise-calculator   "docker-entrypoint.s…"   15 minutes ago   Up 2 minutes   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   calculator
+90dcd5130d74   devopsdockeruh/scaling-exercise-compute      "docker-entrypoint.s…"   15 minutes ago   Up 2 minutes   3000/tcp                                    scaling-exercise_compute_1
+0417c84e944d   load-balancer                                "/app/docker-entrypo…"   15 minutes ago   Up 2 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp           load-balancer
 [1m[7m#[27m[1m[0m                                                                                                                                                                                                           ]2;root@plustig-VirtualBox:~/devops_with_docker/part2/2.5/scaling-exercise]1;..ling-exercise[0m[27m[24m[J[01;32m➜  [36mscaling-exercise[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
 ]2;exit]1;exit
-Script done on 2021-12-04 17:36:16+02:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2021-12-04 17:38:51+02:00 [COMMAND_EXIT_CODE="0"]

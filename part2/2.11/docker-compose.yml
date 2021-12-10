@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+ robo-friends-dev:
+  build: ./roboFriends
+  command: npm start
+  ports:
+   - 3000:3000
+  volumes:
+   - node_modules:/usr/src/app/node_modules
+
+volumes:
+ node_modules:
